@@ -3,8 +3,6 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import XYAxis from './xy.js';
 // import Grid from './Grid.js';
 import Bar from './Bar.js';
-// import { transition } from 'd3-transition';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 // import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -29,7 +27,7 @@ function BarGraph() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [data, setData] = useState([
+  const [data] = useState([
     { name: 'Sun', value: 100 },
     { name: 'Mon', value: 50 },
     { name: 'Tue', value: 500 },
@@ -38,14 +36,6 @@ function BarGraph() {
     { name: 'Fri', value: 20 },
   ]);
 
-  const randomizeData = (e) => {
-    e.preventDefault();
-    const randomizedData = data.map(obj => ({
-      name: obj.name,
-      value: Math.floor(Math.random() * 500 + 1)
-    }));
-    setData(randomizedData);
-  }
 
   const parentWidth = 400;
   const margin = {

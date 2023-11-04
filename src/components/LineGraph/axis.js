@@ -22,7 +22,7 @@ function Axis(props) {
   }, [orient, scale, ticks]);
 
   useEffect(() => {
-    const node = ref.current;
+    // const node = ref.current;
     // const t = transition().duration(1000);
 
     if (orient === "left") {
