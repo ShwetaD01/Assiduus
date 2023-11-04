@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { scaleBand, scaleLinear } from 'd3-scale';
-import XYAxis from './xy.js';
+import XYAxis from './BarGraph/xy.js';
 // import Grid from './Grid.js';
-import Bar from './Bar.js';
+import Bar from './BarGraph/Bar.js';
 // import { transition } from 'd3-transition';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';

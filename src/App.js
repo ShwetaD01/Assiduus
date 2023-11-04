@@ -2,7 +2,7 @@
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Card from './components/Card';
-import BarGraph from './components/BarGraph'
+import BarGraph from './components/BarGraph/BarGraph'
 import Account from './components/Account';
 import LineGraph from './components/LineGraph/LineGraph';
 import Histro from './components/Histro';
@@ -25,10 +25,6 @@ function App() {
     </div>
     
     </div>
-   
-    
-   
-      
       </>
   
 
